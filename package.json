@@ -1,0 +1,25 @@
+{
+  "name": "gazzz-radio-api",
+  "description": "GazzzRadio API Server",
+  "version": "1.0.0",
+  "author": "Max Thorson <max.thorson@gmail.com>",
+  "private": true,
+  "scripts": {
+    "start": "node --use_strict lib/server.js",
+    "dev": "./node_modules/.bin/nodemon --use_strict lib/server.js",
+    "forever": "forever start -a -l forever.log -o out.log -e err.log -c 'node --use_strict' lib/server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  },
+  "dependencies": {
+    "async": "^2.0.0-rc.5",
+    "bluebird": "^3.1.1",
+    "body-parser": "^1.14.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.3.4",
+    "morgan": "^1.6.1",
+    "request-promise": "^3.0.0"
+  }
+}
